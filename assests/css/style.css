@@ -1,0 +1,263 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Spline+Sans:wght@300..700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merienda:wght@300..900&family=Spline+Sans:wght@300..700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cinzel:wght@400..900&family=Merienda:wght@300..900&family=Spline+Sans:wght@300..700&display=swap");
+
+body {
+  /* font-family: "Spline Sans", sans-serif; */
+  /* font-family: "Merienda", cursive; */
+  /* font-family: "Cinzel", serif; */
+  font-family: "Bellota", system-ui;
+  color: #777;
+  line-height: 1, 7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+a:hover {
+  color: #f58d17;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar img {
+  width: 20%;
+}
+
+section {
+  padding: 120px 0px;
+}
+
+.shadow-on-hover {
+  transition: all 0.3s;
+}
+.shadow-on-hover:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* buttons */
+.btn-brand {
+  background-color: #f58d17;
+  color: white;
+}
+.btn-brand:hover {
+  background-color: #ffab4a;
+  color: white;
+}
+
+/* slider */
+.slide-1 {
+  background: linear-gradient(rgba(148, 112, 49, 0.454), rgba(62, 46, 7, 0.42)),
+    url(../images/helena-lopes.jpg);
+  background-size: cover;
+}
+.slide-2 {
+  background: linear-gradient(rgba(148, 112, 49, 0.454), rgba(62, 46, 7, 0.42)),
+    url(../images/jay-wennington.jpg);
+  background-size: cover;
+}
+.slide-3 {
+  background: linear-gradient(rgba(148, 112, 49, 0.454), rgba(62, 46, 7, 0.42)),
+    url(../images/kseniya-buraya.jpg);
+  background-size: cover;
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+  content: " ";
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middl§e;
+}
+
+.carousel-control-prev {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.708);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+.carousel-control-next {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.708);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+/* About Us section */
+#about .divider {
+  width: 60px;
+  height: 2px;
+  display: block;
+  background-color: #f58d17;
+}
+
+/* Menu section */
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.intro-text p {
+  max-width: 500px;
+  margin: 16px auto;
+}
+
+#menu .nav-pills .nav-link {
+  background-color: white;
+  margin: 0px 8px;
+  color: #222;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+#menu .nav-pills .nav-link.active {
+  background-color: #f58d17;
+  margin: 0px 8px;
+  color: white;
+}
+
+.menu-item .stars {
+  color: #f58d17;
+}
+
+/* Features section */
+#features {
+  background: linear-gradient(rgba(85, 64, 28, 0.55), rgba(62, 46, 7, 0.55)),
+    url(../images/dinner-party-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner-features {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.inner-features .feature-icon {
+  color: white;
+  font-size: 55px;
+}
+
+/* Reviews/testimonials section */
+#reviews {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(94, 72, 15, 0.55)),
+    url(../images/wine-tasting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.review-card img {
+  width: 25%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+.review-card .stars {
+  color: #f58d17;
+}
+#reviews .carousel-indicators {
+  margin-bottom: -4rem;
+}
+
+/* Reservations/bookings section */
+#reservations .form-control:focus {
+  box-shadow: none;
+  border-color: #f58d17;
+}
+
+/* Social feed section */
+.insta-posts {
+  position: relative;
+  overflow: hidden;
+}
+.insta-posts img {
+  transition: all 0.4s;
+}
+.insta-posts:hover img {
+  transform: scale(1.2);
+}
+
+.insta-posts .insta-btn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.365);
+  color: rgba(0, 0, 0, 0.605);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+.insta-posts .insta-btn:hover {
+  background-color: white;
+  color: #f58d17;
+}
+
+/* Blog posts section */
+
+.blog-posts img {
+  width: 40%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .blog-posts {
+    flex-direction: column;
+  }
+  .blog-posts img {
+    width: 100%;
+  }
+}
+
+/*Footer section */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.749), rgba(94, 72, 15, 0.728)),
+    url(../images/wine-tasting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+footer .social-icons i {
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer .social-icons i:hover {
+  color: #f58d17;
+}
+footer img {
+  max-width: 40%;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom .container {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.footer-bottom a {
+  color: white;
+}
+.footer-bottom a:hover {
+  color: #f58d17;
+}
